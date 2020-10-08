@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kominfo_logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Akun Baru"
+            android:gravity="center"
+            android:textColor="#FFFFFFFF"
+            android:textSize="40sp"
+            android:transitionName="logo_text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#E9FFFFFF"
+                android:layout_marginBottom="5dp"
+                app:hintTextColor="#E9FFFFFF"
+                android:textColorHighlight="#E9FFFFFF"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="#E9FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#E9FFFFFF"
+                    android:hint="Nama"
+                    android:id="@+id/regnama"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#E9FFFFFF"
+                android:layout_marginBottom="5dp"
+                app:hintTextColor="#E9FFFFFF"
+                android:textColorHighlight="#E9FFFFFF"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="#E9FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#E9FFFFFF"
+                    android:hint="Username"
+                    android:id="@+id/reguser"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#E9FFFFFF"
+                android:layout_marginBottom="5dp"
+                app:hintTextColor="#E9FFFFFF"
+                android:textColorHighlight="#E9FFFFFF"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="#E9FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#E9FFFFFF"
+                    android:hint="Password"
+                    android:id="@+id/regpass"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#E9FFFFFF"
+                android:layout_marginBottom="5dp"
+                app:hintTextColor="#E9FFFFFF"
+                android:textColorHighlight="#E9FFFFFF"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="#E9FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#E9FFFFFF"
+                    android:hint="Email"
+                    android:id="@+id/regemail"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#E9FFFFFF"
+                android:layout_marginBottom="5dp"
+                app:hintTextColor="#E9FFFFFF"
+                android:textColorHighlight="#E9FFFFFF"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="#E9FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#E9FFFFFF"
+                    android:hint="Universitas"
+                    android:id="@+id/regasalskolah"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#E9FFFFFF"
+                android:layout_marginBottom="5dp"
+                app:hintTextColor="#E9FFFFFF"
+                android:textColorHighlight="#E9FFFFFF"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:backgroundTint="#E9FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#E9FFFFFF"
+                    android:hint="Alamat"
+                    android:id="@+id/regalamat"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#E9FFFFFF"
+                android:background="@color/design_default_color_primary_dark"
+                android:text="Daftar"
+                 />
+            <Button
+                android:id="@+id/btn_gotolog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#00FFFF00"
+                android:elevation="0dp"
+                android:text="Sudah daftar? Login"
+                android:textColor="#FFFFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
